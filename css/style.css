@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lighter-color: antiquewhite;
+    --darker-color: rgb(243, 216, 181);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-color);
+    font-family: "Darumadrop One";
+
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    background-color: var(--darker-color);
+    padding: 10px;
+    border-bottom: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#sticker {
+    width: 120px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#image {
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+    object-fit: cover;
+    width: fit-content;
+    max-height: 60vh;
+    transition: 300ms ease-in-out;
+    border: 1px white solid;
+    min-width: 600px;
+}
+
+#btn {
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    width: 100%;
+    font-size: medium;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
+    font-family: "Darumadrop One";
+    border: 1px white solid;
+    background-color: var(--darker-color);
+    transition: 100ms ease-in-out;
+}
+
+#btn:active, #btn.active {
+    background-color: white;
+}
+
+::selection {
+    background-color: antiquewhite;
+}
+
